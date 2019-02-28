@@ -5,6 +5,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
-	// write your code here
+
+        printHelloWorld();
+
+    }
+
+    public static void printHelloWorld(){
+        System.out.println("Hello World");
     }
 }
