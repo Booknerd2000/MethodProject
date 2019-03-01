@@ -20,7 +20,7 @@ public class Main {
         firstNumber = keyboard.nextInt();
         System.out.println("Type in another number.");
         secondNumber = keyboard.nextInt();
-        System.out.println(multipliply(firstNumber,secondNumber));
+        System.out.println(multipliplication(firstNumber,secondNumber));
     }
 
     public static void printHelloWorld(){
@@ -29,7 +29,7 @@ public class Main {
     public static void hello(String name){
         System.out.println("Hello "+name);
     }
-    public static int multipliply(int numberA, int numberB){
+    public static int multipliplication(int numberA, int numberB){
 
         return numberA * numberB;
     }
