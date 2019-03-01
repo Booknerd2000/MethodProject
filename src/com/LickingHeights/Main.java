@@ -8,12 +8,19 @@ public class Main {
 
         String name;
         printHelloWorld();
+        int firstNumber, secondNumber;
 
         System.out.println("What is your name?");
         name = keyboard.nextLine();
 
         hello(name);
 
+        System.out.println("Lets practice multiplication");
+        System.out.println("Types in a number.");
+        firstNumber = keyboard.nextInt();
+        System.out.println("Type in another number.");
+        secondNumber = keyboard.nextInt();
+        System.out.println(multipliply(firstNumber,secondNumber));
     }
 
     public static void printHelloWorld(){
@@ -21,5 +28,9 @@ public class Main {
     }
     public static void hello(String name){
         System.out.println("Hello "+name);
+    }
+    public static int multipliply(int numberA, int numberB){
+
+        return numberA * numberB;
     }
 }
