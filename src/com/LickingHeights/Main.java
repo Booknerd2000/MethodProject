@@ -16,11 +16,21 @@ public class Main {
         hello(name);
 
         System.out.println("Lets practice multiplication");
-        System.out.println("Types in a number.");
+        typeIn("a number.");
         firstNumber = keyboard.nextInt();
-        System.out.println("Type in another number.");
+        typeIn("another number.");
         secondNumber = keyboard.nextInt();
-        System.out.println(multipliplication(firstNumber,secondNumber));
+        System.out.println(multiplication(firstNumber,secondNumber));
+
+        System.out.println("Now it's time for division");
+        typeIn("a different number.");
+        firstNumber = keyboard.nextInt();
+        typeIn("another number.");
+        secondNumber = keyboard.nextInt();
+        System.out.println(division(firstNumber,secondNumber));
+    }
+    public static void typeIn(String direction){
+        System.out.println("Type in "+ direction);
     }
 
     public static void printHelloWorld(){
@@ -29,8 +39,12 @@ public class Main {
     public static void hello(String name){
         System.out.println("Hello "+name);
     }
-    public static int multipliplication(int numberA, int numberB){
+    public static int multiplication(int numberA, int numberB){
 
         return numberA * numberB;
+    }
+    public static double division(double numberA, double numberB){
+
+        return numberA/numberB;
     }
 }
