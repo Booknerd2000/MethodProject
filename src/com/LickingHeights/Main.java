@@ -28,6 +28,13 @@ public class Main {
         typeIn("another number.");
         secondNumber = keyboard.nextInt();
         System.out.println(division(firstNumber,secondNumber));
+
+        System.out.println("Lets determine which number is bigger");
+        typeIn("a number with two digits.");
+        firstNumber = keyboard.nextInt();
+        typeIn("another number with two digits.");
+        secondNumber = keyboard.nextInt();
+        System.out.println(max(firstNumber,secondNumber));
     }
     public static void typeIn(String direction){
         System.out.println("Type in "+ direction);
@@ -46,5 +53,17 @@ public class Main {
     public static double division(double numberA, double numberB){
 
         return numberA/numberB;
+    }
+    public static double max(double numberA, double numberB){
+        if (numberA>numberB){
+            return numberA;
+        }
+        else if (numberA<numberB) {
+            return numberB;
+        }
+        else {
+            System.out.println("Those number are equal to each other.");
+           return numberA;
+        }
     }
 }
