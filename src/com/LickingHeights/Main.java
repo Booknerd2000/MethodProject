@@ -42,7 +42,6 @@ public class Main {
         typeIn("your first name.");
         secondWord = keyboard.nextLine();
         flip(firstWord,secondWord);
-        System.out.println("Well done.");
     }
     public static void typeIn(String direction){
         System.out.println("Type in "+ direction);
@@ -75,6 +74,6 @@ public class Main {
         }
     }
     public static void flip(String firstWord, String secondWord){
-        System.out.println(secondWord+" "+firstWord);
+        System.out.println("Well done "+secondWord+" "+firstWord);
     }
 }
