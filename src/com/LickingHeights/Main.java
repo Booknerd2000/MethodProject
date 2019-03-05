@@ -6,7 +6,7 @@ public class Main {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
 
-        String name;
+        String name, firstWord, secondWord;
         printHelloWorld();
         int firstNumber, secondNumber;
 
@@ -27,7 +27,7 @@ public class Main {
         firstNumber = keyboard.nextInt();
         typeIn("another number.");
         secondNumber = keyboard.nextInt();
-        System.out.println(division(firstNumber,secondNumber));
+        System.out.println(division(firstNumber, secondNumber));
 
         System.out.println("Lets determine which number is bigger");
         typeIn("a number with two digits.");
@@ -35,6 +35,12 @@ public class Main {
         typeIn("another number with two digits.");
         secondNumber = keyboard.nextInt();
         System.out.println(max(firstNumber,secondNumber));
+        keyboard.nextLine();
+        typeIn("your last name.");
+        firstWord = keyboard.nextLine();
+        typeIn("your first name.");
+        secondWord = keyboard.nextLine();
+        flip(firstWord,secondWord);
     }
     public static void typeIn(String direction){
         System.out.println("Type in "+ direction);
@@ -65,5 +71,8 @@ public class Main {
             System.out.println("Those number are equal to each other.");
            return numberA;
         }
+    }
+    public static void flip(String firstWord, String secondWord){
+        System.out.println(secondWord+" "+firstWord);
     }
 }
