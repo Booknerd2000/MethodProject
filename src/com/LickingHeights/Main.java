@@ -15,32 +15,34 @@ public class Main {
 
         hello(name);
 
-        System.out.println("Lets practice multiplication");
+        System.out.println("Lets do multiplication \n");
         typeIn("a number.");
         firstNumber = keyboard.nextInt();
         typeIn("another number.");
         secondNumber = keyboard.nextInt();
-        System.out.println(multiplication(firstNumber,secondNumber));
+        System.out.println("The answer = "+multiplication(firstNumber,secondNumber));
 
-        System.out.println("Now it's time for division");
+        System.out.println("Now it's time for division\n");
         typeIn("a different number.");
         firstNumber = keyboard.nextInt();
         typeIn("another number.");
         secondNumber = keyboard.nextInt();
-        System.out.println(division(firstNumber, secondNumber));
+        System.out.println("The answer = "+division(firstNumber, secondNumber));
 
-        System.out.println("Lets determine which number is bigger");
+        System.out.println("Lets determine which number is bigger \n");
         typeIn("a number with two digits.");
         firstNumber = keyboard.nextInt();
         typeIn("another number with two digits.");
         secondNumber = keyboard.nextInt();
         System.out.println(max(firstNumber,secondNumber));
         keyboard.nextLine();
+        System.out.println("Lets flip the order of your name.");
         typeIn("your last name.");
         firstWord = keyboard.nextLine();
         typeIn("your first name.");
         secondWord = keyboard.nextLine();
         flip(firstWord,secondWord);
+        System.out.println("Well done.");
     }
     public static void typeIn(String direction){
         System.out.println("Type in "+ direction);
